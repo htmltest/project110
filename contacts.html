@@ -49,10 +49,10 @@
                 <!-- top END -->
 
                 <!-- header inner -->
-                <div class="header-inner" style="background-image:url(files/header-news.jpg)">
+                <div class="header-inner" style="background-image:url(files/header-contacts.jpg)">
                     <div class="container">
-                        <div class="breadcrumbs"><a href="index.html">Главная</a><span></span><a href="index.html">Пресс-центр</a><span></span>Новости</div>
-                        <h1>Пресс-центр</h1>
+                        <div class="breadcrumbs"><a href="index.html">Главная</a><span></span>Контакты</div>
+                        <h1>Контакты</h1>
                     </div>
                 </div>
                 <!-- header inner END -->
@@ -61,29 +61,79 @@
             <!-- container -->
             <div class="container">
 
-                <!-- catalogue top sections -->
-                <div class="catalogue-top-sections">
-                    <ul>
-                        <li><a href="news.html">Наши новости</a></li>
-                        <li><a href="news.html">Статьи</a></li>
-                    </ul>
-                </div>
-                <!-- catalogue top sections END -->
-
-                <!-- news detail -->
-                <div class="news-detail">
-                    <div class="news-detail-photo"><img src="files/news-detail.jpg" alt="" /></div>
-                    <div class="news-detail-text">
-                        <h2>Новогодние новинки</h2>
-                        <div class="news-main-date">29.11.2017</div>
-                        <p>Самый любимый праздник в нашей стране – это Новый год. Чтобы встретить этот праздник, мы готовим множество любимых блюд и десертов. Так исторически сложилось, что наиболее праздничным вариантом выпечки считается печенье, во многих странах это традиционный новогодний десерт. В России также прижилась эта новогодняя традиция. Такое печенье одновременно и подарок, и вкусное праздничное угощение, которым можно порадовать свою семью, друзей и близких.</p>
-                        <p>Наши мастера и технологи, вдохновленные Новым Годом, приготовили для вас именно такое новогоднее печенье. Очаровательные снеговички и милые щенки, символ наступающего Нового года порадуют как детей, так и взрослых. Также мы предлагаем вам сдобное печенье с зефиром в форме елочек, которые украсят и дополнят Ваш праздничный стол.</p>
+                <!-- contacts list -->
+                <div class="contacts-list">
+                    <div class="contacts-item">
+                        <div class="contacts-item-title">Отдел продаж</div>
+                        <div class="contacts-phone"><a href="tel:+78412202328">+7 (8412) 20-23-28</a><br /> <a href="tel:+78412202327">+7 (8412) 20-23-27</a><br /> <a href="tel:+78412202321">+7 (8412) 20-23-21</a></div>
+                        <div class="contacts-email"><a href="mailto:slice_opt@mail.ru">slice_opt@mail.ru</a></div>
+                    </div>
+                    <div class="contacts-item">
+                        <div class="contacts-item-title">Отдел закупок</div>
+                        <div class="contacts-phone"><a href="tel:+78412202304">+7 (8412) 20-23-04</a></div>
+                        <div class="contacts-email"><a href="mailto:svk_kd@mail.ru">svk_kd@mail.ru</a></div>
+                    </div>
+                    <div class="contacts-item">
+                        <div class="contacts-item-title">Отдел контроля качества</div>
+                        <div class="contacts-phone"><a href="tel:+78412202322">+7 (8412) 20-23-22</a></div>
+                        <div class="contacts-email"><a href="mailto:slice_pi@mail.ru">slice_pi@mail.ru</a></div>
+                    </div>
+                    <div class="contacts-item">
+                        <div class="contacts-item-title">Отдел работы с&nbsp;персоналом</div>
+                        <div class="contacts-phone"><a href="tel:+78412369579">+7 (8412) 36-95-79</a></div>
+                        <div class="contacts-email"><a href="mailto:slice-penza@mail.ru">slice-penza@mail.ru</a></div>
                     </div>
                 </div>
-                <!-- news detail END -->
+                <!-- contacts list END -->
 
             </div>
             <!-- container END -->
+
+            <!-- contacts map -->
+            <div class="contacts-map">
+                <div id="map"></div>
+                <script src="http://api-maps.yandex.ru/2.1/?load=package.full&lang=ru-RU" type="text/javascript"></script>
+                <script>
+                    ymaps.ready(init);
+
+                    var myMap;
+                    var coords = [53.172343, 45.022926];
+
+                    function init() {
+                        myMap = new ymaps.Map('map', {
+                            center: coords,
+                            zoom: 15,
+                            controls: []
+                        });
+
+                        myMap.controls.add('zoomControl');
+                        myMap.behaviors.disable('scrollZoom');
+
+                        var myPlacemark = new ymaps.Placemark(coords, {}, {
+                            iconLayout: 'default#image',
+                            iconImageHref: 'images/map-icon.png',
+                            iconImageSize: [57, 89],
+                            iconImageOffset: [-29, -44]
+                        });
+                        myMap.geoObjects.add(myPlacemark);
+
+                        myMap.setCenter(coords);
+                        var position = myMap.getGlobalPixelCenter();
+                        myMap.setGlobalPixelCenter([ position[0] - 360, position[1] + 80]);
+                    }
+                </script>
+                <div class="contacts-map-inner">
+                    <div class="container">
+                        <div class="contacts-map-block">
+                            <h2>Адрес</h2>
+                            <p>г. Пенза, ул. Баумана, д. 30<br /> (территория завода «Пензмаш»)</p>
+                            <h2>Время работы</h2>
+                            <p>Понедельник – пятница<br /> 8:00 – 17:00<br /> (обед 12:00 – 13:00)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- contacts map END -->
 
             <!-- feedback -->
             <div class="feedback">

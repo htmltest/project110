@@ -53,8 +53,9 @@ nav ul li a {text-decoration:none}
 .header-main-link a::after {content:""; display:block; width:14px; height:11px; position:absolute; right:29px; top:21px; background:url(../images/header-main-link.svg); transition:all 0.2s}
 .header-main-link a:hover::after {right:21px}
 
-.header-inner {height:426px; background:no-repeat center; background-size:cover}
+.header-inner {height:426px; background:#f3f3f5 no-repeat center; background-size:cover}
 .header-inner-count {font-size:14px; padding:13px 0 0 0; line-height:18px; opacity:0.87}
+.header-inner-404 {height:738px; padding:230px 0 0 0}
 
 .breadcrumbs {font-size:14px; color:rgba(0, 0, 0, 0.4549); line-height:18px; padding:178px 0 0 0}
 .breadcrumbs a {color:rgba(0, 0, 0, 0.4549); text-decoration:none}
@@ -238,6 +239,90 @@ nav ul li a {text-decoration:none}
 .news-detail-photo img {width:100%}
 .news-detail-text {padding:0 105px}
 .news-detail-text h2 {margin-top:38px}
+
+.distrib-top::after {content:""; display:block; clear:both}
+.distrib-top-text {float:left; width:726px}
+.distrib-top-contacts {float:right; width:372px; margin:47px 0 0 0; padding:0 30px 34px 30px; position:relative; background:#f3f3f5; text-align:center; position:relative}
+.distrib-top-contacts::before {content:""; display:block; position:absolute; left:18px; top:-16px; width:108px; height:83px; background:url(../images/distrib-top-contacts.svg)}
+.distrib-top-contacts::after {content:""; display:block; position:absolute; left:58px; top:8px; width:24px; height:24px; background:url(../images/distrib-top-contacts-phone.svg)}
+.distrib-top-contacts-title {font:26px/34px Merriweather, serif; color:rgba(0, 0, 0, 0.78); padding:36px 0 0 0}
+.distrib-top-contacts-subtitle {text-transform:uppercase; font-size:12px; line-height:15px; font-weight:500; color:#868692; margin:28px 0; letter-spacing:0.4px}
+.distrib-top-contacts-phone {font-size:18px; line-height:22px; margin:10px 0; font-weight:500}
+.distrib-top-contacts-phone a {text-decoration:none}
+.distrib-top-contacts-phone a:hover {color:#e1488f}
+
+.distrib-prefs {margin:103px -22px 0 -22px}
+.distrib-prefs::after {content:""; display:block; clear:both}
+.distrib-pref {float:left; width:25%; padding:0 22px}
+.distrib-pref-icon {line-height:0}
+.distrib-pref-title {font:26px/34px Merriweather, serif; color:rgba(0, 0, 0, 0.78); margin:15px 0 0 0}
+.distrib-pref-text {margin:33px 0 0 0}
+
+.distrib-digits {margin:88px 0 0 0; background:url(../images/feedback.png) repeat-y center; padding:86px 0 64px 0}
+.distrib-digits-inner {margin:0 -22px}
+.distrib-digits-inner::after {content:""; display:block; clear:both}
+.distrib-digits-item {float:left; width:33.33%; padding:0 22px}
+.distrib-digits-item-inner {height:82px; background:#fff; border-radius:4px; text-align:center}
+.distrib-digits-item-number {display:inline-block; vertical-align:top; color:#ee64a4; font:122px/139px Domine, serif; margin:-43px 0 0 0}
+.distrib-digits-item-text {display:inline-block; vertical-align:top; font-weight:500; font-size:14px; line-height:18px; text-transform:uppercase; margin:14px 0 0 9px; text-align:left}
+
+.distrib-map {padding:15px 0 0 0}
+.distrib-map::after {content:""; display:block; clear:both}
+
+.distrib-map-scheme {float:left; width:684px; position:relative; height:504px; margin:77px 0 0 0; background:url(../images/distrib-map-scheme.png) no-repeat right top}
+.distrib-map-scheme-point {position:absolute}
+.distrib-map-scheme-point::after {content:""; display:block; left:50%; top:50%; width:8px; height:8px; margin:-4px 0 0 -4px; background:#ee64a4; border-radius:50%}
+.distrib-map-scheme-point.active::after,
+.distrib-map-scheme-point:hover::after {border:6px solid #ee64a4; width:20px; height:20px; margin:-10px 0 0 -10px; background:#fff}
+
+.distrib-map-content {float:right; width:476px}
+.distrib-map-menu {border-bottom:1px solid #c6c6c9; text-transform:uppercase; font-weight:500; font-size:12px; line-height:15px; padding:6px 0 27px 0; letter-spacing:0.4px}
+.distrib-map-menu ul {margin:0; padding:0; list-style:none}
+.distrib-map-menu ul::after {content:""; display:block; clear:both}
+.distrib-map-menu ul li {float:left; margin:0 0 0 40px; padding:0}
+.distrib-map-menu ul li::before {display:none}
+.distrib-map-menu ul li:first-child {margin:0}
+.distrib-map-menu ul li a {text-decoration:none}
+.distrib-map-menu ul li.active {position:relative; font-weight:bold}
+.distrib-map-menu ul li.active::after {content:""; display:block; position:absolute; left:0; bottom:-27px; right:0; height:4px; background:#ee64a4}
+.distrib-map-menu ul li.active a {color:#ee64a4}
+.distrib-map-tabs {position:relative; border-bottom:1px solid rgba(142, 142, 147, 0.5); padding:11px 0}
+.distrib-map-tab {position:absolute; left:-9999px; top:-9999px; width:100%; font-size:12px; line-height:22px}
+.distrib-map-tab.active {position:relative; left:auto; top:auto}
+.distrib-map-tab-list {position:relative; height:225px; overflow:auto}
+.distrib-map-list-item {cursor:pointer}
+.distrib-map-list-item:hover,
+.distrib-map-list-item.hover {color:#e1488f}
+.distrib-map-list-item.active {color:#ee64a4}
+
+.postavshik-list {margin:0 -22px}
+.postavshik-list::after {content:""; display:block; clear:both}
+.postavshik-item {float:left; width:25%; padding:0 22px}
+.postavshik-item ul {margin:0}
+
+.contacts-list {margin:70px -22px 0 -22px}
+.contacts-list::after {content:""; display:block; clear:both}
+.contacts-item {float:left; width:25%; padding:0 22px}
+.contacts-item-title {font:26px/34px Merriweather, serif; color:rgba(0, 0, 0, 0.78); margin:0 0 36px 0}
+.contacts-phone {padding:2px 0 0 49px; position:relative; margin:6px 0 0 0}
+.contacts-phone::before {content:""; display:block; position:absolute; left:0; top:0; width:32px; height:32px; background:url(../images/footer-phone.svg)}
+.contacts-email {padding:2px 0 0 49px; position:relative; margin:6px 0 0 0}
+.contacts-email::before {content:""; display:block; position:absolute; left:0; top:0; width:32px; height:32px; background:url(../images/footer-email.svg)}
+.contacts-item a {text-decoration:none}
+
+.contacts-map {max-width:1800px; margin:76px 0 0 0; position:relative}
+#map {height:696px}
+.contacts-map-inner {position:absolute; left:0; top:0; right:0; height:0}
+.contacts-map-block {position:relative; width:476px; background:#fff; border:10px solid #f3f3f5; top:109px; padding:21px 50px 37px 50px}
+.contacts-map-block h2 {margin:40px 0 26px 0}
+.contacts-map-block p {margin:26px 0}
+
+.contacts-personal {max-width:892px; margin:53px 0 0 0}
+.contacts-personal a {text-decoration:none; color:#ee64a4}
+.contacts-personal a:hover {color:#e1488f}
+
+.text-404 {margin:47px 0 0 0}
+.header-main-link-404 a {width:276px}
 
 .feedback {margin:93px 0 0 0; background:url(../images/feedback.png) repeat-y center; padding:68px 0 80px 0}
 .feedback-title {float:left; font:36px/54px Merriweather, serif; padding:14px 0 0 0}
