@@ -127,6 +127,23 @@ $(document).ready(function() {
         e.preventDefault();
     });
 
+    $('.mobile-menu-link').click(function(e) {
+        $('html').addClass('mobile-menu-open');
+        e.preventDefault();
+    });
+
+    $('.mobile-menu-close, .mobile-menu-close-footer a').click(function(e) {
+        $('html').removeClass('mobile-menu-open');
+        e.preventDefault();
+    });
+
+    $('.catalogue-side-group-all .catalogue-side-group-title a').click(function(e) {
+        if ($(window).width() < 990) {
+            $('.catalogue-side-menu').toggleClass('open');
+            e.preventDefault();
+        }
+    });
+
 });
 
 $(window).on('resize', function() {
@@ -285,8 +302,8 @@ function windowPosition() {
         $('.window-container').css({'left': '50%', 'margin-left': -$('.window-container').width() / 2});
 
         $('.window-container').css({'top': '50%', 'margin-top': -$('.window-container').height() / 2, 'padding-bottom': 0});
-        if ($('.window-container').height() > $('.window').height() - 60) {
-            $('.window-container').css({'top': '30px', 'margin-top': 0, 'padding-bottom': 30});
+        if ($('.window-container').height() > $('.window').height()) {
+            $('.window-container').css({'top': '0', 'margin-top': 0, 'padding-bottom': 0});
         }
     }
 }
