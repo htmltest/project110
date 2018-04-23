@@ -7,11 +7,16 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Domine:400,700|Merriweather|Montserrat:400,500,600&amp;subset=cyrillic" />
         <link rel="stylesheet" href="css/styles.css" />
         <link rel="stylesheet" href="js/jscrollpane/jquery.jscrollpane.css" />
+        <link rel="stylesheet" href="js/chosen/chosen.css" />
 
         <script src="js/jquery-3.3.1.min.js"></script>
         <script src="js/jquery.scrollTo.min.js"></script>
         <script src="js/jscrollpane/jquery.mousewheel.js"></script>
         <script src="js/jscrollpane/jquery.jscrollpane.min.js"></script>
+        <script src="js/jquery.maskedinput.js"></script>
+        <script src="js/validation/jquery.validate.min.js"></script>
+        <script src="js/validation/messages_ru.js"></script>
+        <script src="js/chosen/chosen.jquery.min.js"></script>
         <script src="js/tools.js"></script>
 
         <meta name="viewport" content="width=1236" />
@@ -54,6 +59,22 @@
                         <div class="breadcrumbs"><a href="index.html">Главная</a><span></span><a href="index.html">Пресс-центр</a><span></span>Новости</div>
                         <h1>Пресс-центр</h1>
                     </div>
+                    <div class="header-search">
+                        <div class="container">
+                            <div class="breadcrumbs">Поиск по каталогу продукции</div>
+                            <div class="header-search-form">
+                                <form action="windows/search.html" method="post">
+                                    <div class="header-search-input"><input type="text" name="search" value="" placeholder="Что будем искать?" class="required" /></div>
+                                </form>
+                            </div>
+                            <div class="header-search-count"></div>
+                        </div>
+                    </div>
+                    <div class="header-search-results">
+                        <div class="container">
+                            <div class="header-search-results-inner"></div>
+                        </div>
+                    </div>
                 </div>
                 <!-- header inner END -->
             </header>
@@ -77,7 +98,7 @@
                         <h2>Новогодние новинки</h2>
                         <div class="news-main-date">29.11.2017</div>
                         <div class="news-main-anonce">Самый любимый праздник в нашей стране – это Новый год. Чтобы встретить этот праздник, мы готовим множество любимых блюд и десертов. Так исторически сложилось, что наиболее праздничным вариантом выпечки считается печенье, во многих странах это традиционный новогодний десерт. В России также прижилась эта новогодняя традиция. Такое печенье одновременно и подарок, и вкусное праздничное угощение, которым можно порадовать свою семью, друзей и близких.</div>
-                        <div class="news-main-anonce-more"><a href="news-detail.html">Читать дальше</a></div>
+                        <div class="news-main-anonce-more"><a href="news-detail.html" data-window="windows/news-detail.html" class="window-link">Читать дальше</a></div>
                     </div>
                 </div>
                 <!-- news main END -->
@@ -86,7 +107,7 @@
                 <div class="news-list">
                     <!-- news list item -->
                     <div class="news-list-item">
-                        <a href="news-detail.html">
+                        <a href="news-detail.html" data-window="windows/news-detail.html" class="window-link">
                             <div class="news-list-item-preview">
                                 <img src="files/news-1.jpg" alt="" />
                                 <div class="news-list-item-detail">
@@ -102,7 +123,7 @@
 
                     <!-- news list item -->
                     <div class="news-list-item">
-                        <a href="news-detail.html">
+                        <a href="news-detail.html" data-window="windows/news-detail.html" class="window-link">
                             <div class="news-list-item-preview">
                                 <img src="files/news-2.jpg" alt="" />
                                 <div class="news-list-item-detail">
@@ -118,7 +139,7 @@
 
                     <!-- news list item -->
                     <div class="news-list-item">
-                        <a href="news-detail.html">
+                        <a href="news-detail.html" data-window="windows/news-detail.html" class="window-link">
                             <div class="news-list-item-preview">
                                 <img src="files/news-3.jpg" alt="" />
                                 <div class="news-list-item-detail">
@@ -134,7 +155,7 @@
 
                     <!-- news list item -->
                     <div class="news-list-item">
-                        <a href="news-detail.html">
+                        <a href="news-detail.html" data-window="windows/news-detail.html" class="window-link">
                             <div class="news-list-item-preview">
                                 <img src="files/news-4.jpg" alt="" />
                                 <div class="news-list-item-detail">
@@ -187,7 +208,7 @@
                                 <li><a href="#" data-id="3">Отзыв о качестве нашей продукции</a></li>
                             </ul>
                         </div>
-                        <a href="windows/feedback.html" class="feedback-theme-link window-link"></a>
+                        <a href="feedback.html" class="feedback-theme-link window-link" data-window="windows/feedback.html"></a>
                     </div>
                     <div class="feedback-phone">
                         <div class="feedback-phone-title">Телефон для заказов</div>

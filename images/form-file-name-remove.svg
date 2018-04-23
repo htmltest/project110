@@ -1,0 +1,13 @@
+<svg width="16" height="16" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="Canvas" fill="none">
+<g id="Crest">
+<g id="Rectangle 5 Copy">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M 0 1C 0 0.447715 0.447715 0 1 0L 19 0C 19.5523 0 20 0.447715 20 1C 20 1.55228 19.5523 2 19 2L 1 2C 0.447715 2 0 1.55228 0 1Z" transform="matrix(0.707107 -0.707107 0.707107 0.707107 0.221924 14.3643)" fill="#EE64A4"/>
+</g>
+<g id="Rectangle 5 Copy 2">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M 0 1C 0 0.447715 0.447715 0 1 0L 19 0C 19.5523 0 20 0.447715 20 1C 20 1.55228 19.5523 2 19 2L 1 2C 0.447715 2 0 1.55228 0 1Z" transform="matrix(0.707107 0.707107 -0.707107 0.707107 1.63599 0.22168)" fill="#EE64A4"/>
+</g>
+</g>
+</g>
+</svg>
+

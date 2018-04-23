@@ -7,11 +7,16 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Domine:400,700|Merriweather|Montserrat:400,500,600&amp;subset=cyrillic" />
         <link rel="stylesheet" href="css/styles.css" />
         <link rel="stylesheet" href="js/jscrollpane/jquery.jscrollpane.css" />
+        <link rel="stylesheet" href="js/chosen/chosen.css" />
 
         <script src="js/jquery-3.3.1.min.js"></script>
         <script src="js/jquery.scrollTo.min.js"></script>
         <script src="js/jscrollpane/jquery.mousewheel.js"></script>
         <script src="js/jscrollpane/jquery.jscrollpane.min.js"></script>
+        <script src="js/jquery.maskedinput.js"></script>
+        <script src="js/validation/jquery.validate.min.js"></script>
+        <script src="js/validation/messages_ru.js"></script>
+        <script src="js/chosen/chosen.jquery.min.js"></script>
         <script src="js/tools.js"></script>
 
         <meta name="viewport" content="width=1236" />
@@ -54,6 +59,22 @@
                         <div class="breadcrumbs"><a href="index.html">Главная</a><span></span><a href="catalogue.html">Продукция</a><span></span>Печенье</div>
                         <h1>Печенье</h1>
                         <div class="header-inner-count">245 товаров</div>
+                    </div>
+                    <div class="header-search">
+                        <div class="container">
+                            <div class="breadcrumbs">Поиск по каталогу продукции</div>
+                            <div class="header-search-form">
+                                <form action="windows/search.html" method="post">
+                                    <div class="header-search-input"><input type="text" name="search" value="" placeholder="Что будем искать?" class="required" /></div>
+                                </form>
+                            </div>
+                            <div class="header-search-count"></div>
+                        </div>
+                    </div>
+                    <div class="header-search-results">
+                        <div class="container">
+                            <div class="header-search-results-inner"></div>
+                        </div>
                     </div>
                 </div>
                 <!-- header inner END -->
@@ -138,7 +159,7 @@
                         <div class="catalogue-sections-list-inner">
                             <!-- catalogue sections item -->
                             <div class="catalogue-sections-item">
-                                <a href="catalogue-detail.html">
+                                <a href="catalogue-detail.html" data-window="windows/catalogue-detail.html" class="window-link">
                                     <div class="catalogue-sections-item-preview">
                                         <img src="files/catalogue-section-01.jpg" alt="" />
                                         <div class="catalogue-sections-item-new"></div>
@@ -156,7 +177,7 @@
 
                             <!-- catalogue sections item -->
                             <div class="catalogue-sections-item">
-                                <a href="catalogue-detail.html">
+                                <a href="catalogue-detail.html" data-window="windows/catalogue-detail.html" class="window-link">
                                     <div class="catalogue-sections-item-preview">
                                         <img src="files/catalogue-section-02.jpg" alt="" />
                                         <div class="catalogue-sections-item-new"></div>
@@ -174,7 +195,7 @@
 
                             <!-- catalogue sections item -->
                             <div class="catalogue-sections-item">
-                                <a href="catalogue-detail.html">
+                                <a href="catalogue-detail.html" data-window="windows/catalogue-detail.html" class="window-link">
                                     <div class="catalogue-sections-item-preview">
                                         <img src="files/catalogue-section-03.jpg" alt="" />
                                         <div class="catalogue-sections-item-detail">
@@ -191,7 +212,7 @@
 
                             <!-- catalogue sections item -->
                             <div class="catalogue-sections-item">
-                                <a href="catalogue-detail.html">
+                                <a href="catalogue-detail.html" data-window="windows/catalogue-detail.html" class="window-link">
                                     <div class="catalogue-sections-item-preview">
                                         <img src="files/catalogue-section-04.jpg" alt="" />
                                         <div class="catalogue-sections-item-detail">
@@ -208,7 +229,7 @@
 
                             <!-- catalogue sections item -->
                             <div class="catalogue-sections-item">
-                                <a href="catalogue-detail.html">
+                                <a href="catalogue-detail.html" data-window="windows/catalogue-detail.html" class="window-link">
                                     <div class="catalogue-sections-item-preview">
                                         <img src="files/catalogue-section-05.jpg" alt="" />
                                         <div class="catalogue-sections-item-detail">
@@ -225,7 +246,7 @@
 
                             <!-- catalogue sections item -->
                             <div class="catalogue-sections-item">
-                                <a href="catalogue-detail.html">
+                                <a href="catalogue-detail.html" data-window="windows/catalogue-detail.html" class="window-link">
                                     <div class="catalogue-sections-item-preview">
                                         <img src="files/catalogue-section-06.jpg" alt="" />
                                         <div class="catalogue-sections-item-detail">
@@ -242,7 +263,7 @@
 
                             <!-- catalogue sections item -->
                             <div class="catalogue-sections-item">
-                                <a href="catalogue-detail.html">
+                                <a href="catalogue-detail.html" data-window="windows/catalogue-detail.html" class="window-link">
                                     <div class="catalogue-sections-item-preview">
                                         <img src="files/catalogue-section-07.jpg" alt="" />
                                         <div class="catalogue-sections-item-detail">
@@ -259,7 +280,7 @@
 
                             <!-- catalogue sections item -->
                             <div class="catalogue-sections-item">
-                                <a href="catalogue-detail.html">
+                                <a href="catalogue-detail.html" data-window="windows/catalogue-detail.html" class="window-link">
                                     <div class="catalogue-sections-item-preview">
                                         <img src="files/catalogue-section-08.jpg" alt="" />
                                         <div class="catalogue-sections-item-detail">
@@ -276,7 +297,7 @@
 
                             <!-- catalogue sections item -->
                             <div class="catalogue-sections-item">
-                                <a href="catalogue-detail.html">
+                                <a href="catalogue-detail.html" data-window="windows/catalogue-detail.html" class="window-link">
                                     <div class="catalogue-sections-item-preview">
                                         <img src="files/catalogue-section-09.jpg" alt="" />
                                         <div class="catalogue-sections-item-detail">
@@ -293,7 +314,7 @@
 
                             <!-- catalogue sections item -->
                             <div class="catalogue-sections-item">
-                                <a href="catalogue-detail.html">
+                                <a href="catalogue-detail.html" data-window="windows/catalogue-detail.html" class="window-link">
                                     <div class="catalogue-sections-item-preview">
                                         <img src="files/catalogue-section-10.jpg" alt="" />
                                         <div class="catalogue-sections-item-detail">
@@ -310,7 +331,7 @@
 
                             <!-- catalogue sections item -->
                             <div class="catalogue-sections-item">
-                                <a href="catalogue-detail.html">
+                                <a href="catalogue-detail.html" data-window="windows/catalogue-detail.html" class="window-link">
                                     <div class="catalogue-sections-item-preview">
                                         <img src="files/catalogue-section-11.jpg" alt="" />
                                         <div class="catalogue-sections-item-detail">
@@ -327,7 +348,7 @@
 
                             <!-- catalogue sections item -->
                             <div class="catalogue-sections-item">
-                                <a href="catalogue-detail.html">
+                                <a href="catalogue-detail.html" data-window="windows/catalogue-detail.html" class="window-link">
                                     <div class="catalogue-sections-item-preview">
                                         <img src="files/catalogue-section-12.jpg" alt="" />
                                         <div class="catalogue-sections-item-detail">
@@ -344,7 +365,7 @@
 
                             <!-- catalogue sections item -->
                             <div class="catalogue-sections-item">
-                                <a href="catalogue-detail.html">
+                                <a href="catalogue-detail.html" data-window="windows/catalogue-detail.html" class="window-link">
                                     <div class="catalogue-sections-item-preview">
                                         <img src="files/catalogue-section-13.jpg" alt="" />
                                         <div class="catalogue-sections-item-detail">
@@ -361,7 +382,7 @@
 
                             <!-- catalogue sections item -->
                             <div class="catalogue-sections-item">
-                                <a href="catalogue-detail.html">
+                                <a href="catalogue-detail.html" data-window="windows/catalogue-detail.html" class="window-link">
                                     <div class="catalogue-sections-item-preview">
                                         <img src="files/catalogue-section-14.jpg" alt="" />
                                         <div class="catalogue-sections-item-detail">
@@ -378,7 +399,7 @@
 
                             <!-- catalogue sections item -->
                             <div class="catalogue-sections-item">
-                                <a href="catalogue-detail.html">
+                                <a href="catalogue-detail.html" data-window="windows/catalogue-detail.html" class="window-link">
                                     <div class="catalogue-sections-item-preview">
                                         <img src="files/catalogue-section-15.jpg" alt="" />
                                         <div class="catalogue-sections-item-detail">
@@ -395,7 +416,7 @@
 
                             <!-- catalogue sections item -->
                             <div class="catalogue-sections-item">
-                                <a href="catalogue-detail.html">
+                                <a href="catalogue-detail.html" data-window="windows/catalogue-detail.html" class="window-link">
                                     <div class="catalogue-sections-item-preview">
                                         <img src="files/catalogue-section-13.jpg" alt="" />
                                         <div class="catalogue-sections-item-detail">
@@ -412,7 +433,7 @@
 
                             <!-- catalogue sections item -->
                             <div class="catalogue-sections-item">
-                                <a href="catalogue-detail.html">
+                                <a href="catalogue-detail.html" data-window="windows/catalogue-detail.html" class="window-link">
                                     <div class="catalogue-sections-item-preview">
                                         <img src="files/catalogue-section-14.jpg" alt="" />
                                         <div class="catalogue-sections-item-detail">
@@ -429,7 +450,7 @@
 
                             <!-- catalogue sections item -->
                             <div class="catalogue-sections-item">
-                                <a href="catalogue-detail.html">
+                                <a href="catalogue-detail.html" data-window="windows/catalogue-detail.html" class="window-link">
                                     <div class="catalogue-sections-item-preview">
                                         <img src="files/catalogue-section-15.jpg" alt="" />
                                         <div class="catalogue-sections-item-detail">
@@ -487,7 +508,7 @@
                                 <li><a href="#" data-id="3">Отзыв о качестве нашей продукции</a></li>
                             </ul>
                         </div>
-                        <a href="windows/feedback.html" class="feedback-theme-link window-link"></a>
+                        <a href="feedback.html" class="feedback-theme-link window-link" data-window="windows/feedback.html"></a>
                     </div>
                     <div class="feedback-phone">
                         <div class="feedback-phone-title">Телефон для заказов</div>
